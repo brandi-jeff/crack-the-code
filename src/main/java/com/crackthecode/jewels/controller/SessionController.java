@@ -31,6 +31,7 @@ public class SessionController {
    * <p> This method initializes requirements for the game to run and displays the
    * String representation of the Session View and Game View. Allows user to play as many times as
    * desired. </p>
+   *
    * @throws IOException Unable to read user input; unable to continue
    */
 
@@ -38,7 +39,19 @@ public class SessionController {
     StatisticsManager stats = new StatisticsManager();
     SessionView view = new SessionView(stats);
     output.print(SessionView.GAME_STORY);
-    this.input.readLine();
+    //this.input.readLine();
+    String input = this.input.readLine();
+    if (input.equals("#")) {
+      output.print("\nIf you are sure you do not want to accept this challenge, type 'exit'.\n"
+          + "If you made a mistake and want to accept this challenge, type 'yes'.\n");
+      input = this.input.readLine().toLowerCase();
+      if (input.equals("exit")) {
+        output.print(
+            "\nYour choice to not accept this challenge means you have given up your life of crime. Good luck! \n"
+                + "If you change your mind, come back and play Crack the Code!\n");
+        System.exit(0);
+      }
+    }
     output.printf(SessionView.GAME_RULES, Guess.GUESS_LENGTH, Game.MAX_NUMBER_OF_TRIES,
         Cipher.LEVEL_ONE_POOL, Cipher.LEVEL_TWO_POOL, Cipher.LEVEL_THREE_POOL);
     do {
@@ -62,7 +75,7 @@ public class SessionController {
     if (!playAgain) {
       output.print(
           "\nYour choice to not play again means you have given up your life of crime. Good luck! \n"
-              + "If you change your mind, come back and play Crack the Code!");
+              + "If you change your mind, come back and play Crack the Code!\n");
     }
     return playAgain;
   }
@@ -74,6 +87,17 @@ public class SessionController {
       output.println("\nChoose Difficulty Level (1, 2, or 3):");
       try {
         input = this.input.readLine().strip();
+        if (input.equals("#")) {
+          output.print("\nIf you are sure you want to exit this challenge, type 'exit'.\n"
+              + "If you want to continue with this challenge, please choose a level.\n");
+          input = this.input.readLine().toLowerCase();
+          if (input.isEmpty() || input.equals("exit")) {
+            output.print(
+                "\nYour choice to stop playing means you have given up your life of crime. Good luck! \n"
+                    + "If you change your mind, come back and play Crack the Code!\n");
+            System.exit(0);
+          }
+        }
         difficultyLevel = Integer.parseInt(input);
         cipher = new Cipher(difficultyLevel);
       } catch (InvalidLevelException | NumberFormatException e) {
@@ -81,5 +105,6 @@ public class SessionController {
       }
     } while (cipher == null);
   }
+
 }
 

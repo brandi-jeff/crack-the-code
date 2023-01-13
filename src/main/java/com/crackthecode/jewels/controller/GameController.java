@@ -47,6 +47,17 @@ public class GameController {
       String input = null;
       try {
         input = this.input.readLine().strip();
+        if (input.equals("#")) {
+          output.print("\nIf you are sure you want to exit this challenge, type 'exit'.\n"
+              + "If you want to continue with this challenge, please enter your guess.\n");
+          input = this.input.readLine().toLowerCase();
+          if (input.isEmpty() || input.equals("exit")) {
+            output.print(
+                "\nYour choice to stop playing means you have given up your life of crime. Good luck! \n"
+                    + "If you change your mind, come back and play Crack the Code!\n");
+            System.exit(0);
+          }
+        }
         guess.setCurrentGuess(input);
         game.checkGuess(guess);
         output.print(view.getGameBoard(guess, game, cipher));
