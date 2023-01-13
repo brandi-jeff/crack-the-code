@@ -36,14 +36,14 @@ public class Game {
    * pearls via a counter.</p>
    * @param  guess the instance of Guess for this current game
    */
-  public void checkGuess(Guess guess) {
-    if (guessCounter < MAX_NUMBER_OF_TRIES) {
-      cipherCharArray = cipher.getCurrentCipher().toCharArray();
-      guessCharArray = guess.getCurrentGuess().toCharArray();
-      int rubyTracker;
+  public void checkGuess(Guess guess) {                             // goes character by character in the guess to match against the cipher to assign rubies. if a
+    if (guessCounter < MAX_NUMBER_OF_TRIES) {                       // character in guess matches exactly to the cipher, a placeholder for the ruby replaces the character
+      cipherCharArray = cipher.getCurrentCipher().toCharArray();    // that loop continues until all 5 characters have been checked.
+      guessCharArray = guess.getCurrentGuess().toCharArray();       // then the same thing occurs for pearls, so if a character in the guess matches a character in the
+      int rubyTracker;                                              // cipher but its in the wrong place, a placeholder for the pearl replaces that character
       int pearlTracker = 0;
       guessCounter++;
-      if (cipher.getCurrentCipher().equals(guess.getCurrentGuess())) {
+      if (cipher.getCurrentCipher().equals(guess.getCurrentGuess())) {     //uses .equals method to check characters
         rubyTracker = Guess.GUESS_LENGTH;
         updateGameStats(true, guessCounter);
       } else {
