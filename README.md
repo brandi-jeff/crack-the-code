@@ -20,9 +20,9 @@ You can read about that here -> [Mastermind](https://en.wikipedia.org/wiki/Maste
 When I read up on both those games I'm like, sooo basically it's [Wordle](https://www.nytimes.com/games/wordle/index.html) 
 with more chances?  **:thinking:**
 Eh, yes and no. <br>
--[X] **Yes. You are trying to guess a "code".** <br>
--[X] **Yes. You do have a certain amount of tries to guess the "code".** <br>
--[X] **Yes. The "code" is a certain amount of characters long.** <br>
+- [X] **Yes. You are trying to guess a "code".** <br>
+- [X] **Yes. You do have a certain amount of tries to guess the "code".** <br>
+- [X] **Yes. The "code" is a certain amount of characters long.** <br>
 
 However, the main difference between these games and Wordle is, Wordle will tell the player if the player has a correct character 
  in the correct position and/or a correct character in the wrong position. Crack the Code and the two games it is based off will not.
