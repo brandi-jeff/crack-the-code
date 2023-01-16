@@ -61,7 +61,7 @@ times as I lost. **:upside_down_face:** <br>
 Anywho, in this forked version of code, I added the option for the player to exit the game any 
 time user input was accepted just by typing '#'. This was beyond the scope of my knowledge, though. I knew (somewhat) where I needed 
 to add the code, but not exactly what code to add and how. Luckily, the internet exists. After extensive (seriously, it took awhile) research, 
-I figured out what I needed to make this happen. I implemented it and **BOOM!** The player can now exit the game whenever they want. 
+I figured out what I needed to make this happen. I implemented it and **BOOM!** The player can now exit the game whenever they want. I also added in code that would print the current cipher along with the goodbye message, should the player choose to exit afer choosing a difficulty level. 
 <br>
 ### THANKS!
 Thank you for taking the time to read all of this, review the code, and/or play the game. If you decide to play the game, 
