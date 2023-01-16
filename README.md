@@ -53,12 +53,15 @@ of our first time coding in Java, and I hope you enjoy reviewing the code and ev
 
 ### Updates
 Naturally, as soon as the project was due, I thought of another feature to add to the game. It's a very simple feature that
-should have probably been an obvious addition during our planning, but for what ever reason we never really thought about it. 
-It's an exit feature. At no point in the game could a player decided they wanted to quit. Which I REALLY should have thought of as many
-times as I lost. **:upside_down_face:** So, in this forked version of the game, I added the option for the player to exit the game at any 
+should have probably been an obvious addition during our planning, but for what ever reason we never really thought about it. <br>
+
+It's an exit feature. At no point in the game could a player decided they wanted to stop playing unless they won or lost. Which I REALLY should have thought of as many
+times as I lost. **:upside_down_face:** <br> 
+
+Anywho, in this forked version of code, I added the option for the player to exit the game any 
 time user input was accepted just by typing '#'. This was beyond the scope of my knowledge, though. I knew (somewhat) where I needed 
-to add the code, but not what code to add and how. Luckily, the internet exists. After extensive (seriously, it took awhile) research, 
-I figured out what I needed to make this happen. I implemented it and **BOOM!** The player can exit the game whenever they want. 
+to add the code, but not exactly what code to add and how. Luckily, the internet exists. After extensive (seriously, it took awhile) research, 
+I figured out what I needed to make this happen. I implemented it and **BOOM!** The player can now exit the game whenever they want. 
 <br>
 ### THANKS!
 Thank you for taking the time to read all of this, review the code, and/or play the game. If you decide to play the game, 
