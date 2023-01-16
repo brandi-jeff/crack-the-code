@@ -1,5 +1,5 @@
 #  Crack the Code 
-###### This was a group project with Sam Breece and Miggie Garcia for our final Java Project in the Java portion of or SDE cohort with TLG Learning. 
+###### This was a group project with Sam Breece and Miggie Garcia for our final Java Project in the Java portion of our SDE cohort with TLG Learning. 
 <br>
 This game is a play on the paper game Bulls and Cows. In this rendition of the game, the player is a master of disguise who can tactically acquire any jewel desired.
 The player will have 15 tries to crack the 5 character cipher. If they complete the challenge within the specified tries, they will win and evade the authorities once again.
