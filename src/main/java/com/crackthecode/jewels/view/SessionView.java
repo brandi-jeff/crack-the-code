@@ -12,8 +12,8 @@ public class SessionView {
 
   public static final String GAME_STORY = "Welcome to Crack the Code! \n"
       + "You are a master of disguise who has a knack for tactically acquiring precious jewels. \n"
-      + "You have come across a particularly challenging obstacle keeping you from the most precious jewel you have a encountered to date. \n"
-      + "Your challenge, should you choose to accept it, will be to crack the cipher before the authorities arrive and capture you. \n"
+      + "You have come across a particularly challenging obstacle keeping you from the most precious \njewel you have a encountered to date. "
+      + "Your challenge, should you choose to accept it, \nwill be to crack the cipher before the authorities arrive and capture you. \n"
       + "If you succeed, you will be the new owner of the rarest jewels known to man. \n"
       + "BUT, should you fail, all the jewels you have acquired will be lost, as will life as you know it. \n"
       + "If you wish to accept this challenge, press 'return'/'enter'. "

@@ -53,7 +53,9 @@ public class GameController {
           input = this.input.readLine().toLowerCase();
           if (input.isEmpty() || input.equals("exit")) {
             output.print(
-                "\nYour choice to stop playing means you have given up your life of crime. Good luck! \n"
+                "\nThe correct cipher was: " + cipher.getCurrentCipher()
+                    + "."
+                    + "\nYour choice to stop playing means you have given up your life of crime. Good luck! \n"
                     + "If you change your mind, come back and play Crack the Code!\n");
             System.exit(0);
           }
